@@ -13,16 +13,16 @@ require 'plugin-update-checker/plugin-update-checker.php';
 use YahnisElsts\PluginUpdateChecker\v5\PucFactory;
 
 $myUpdateChecker = PucFactory::buildUpdateChecker(
-	'git@github.com:fatehgotra/plugin-update.git',
+	'https://github.com/fatehgotra/plugin-update.git',
 	__FILE__,
 	'plugin-update'
 );
 
-//Set the branch that contains the stable release.
-$myUpdateChecker->setBranch('main');
+// //Set the branch that contains the stable release.
+ $myUpdateChecker->setBranch('main');
 
-//Optional: If you're using a private repository, specify the access token like this:
-$myUpdateChecker->setAuthentication('your-token-here');
+// //Optional: If you're using a private repository, specify the access token like this:
+ $myUpdateChecker->setAuthentication('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');
 
 require_once (ROOTDIR.'PageController.php');
 
